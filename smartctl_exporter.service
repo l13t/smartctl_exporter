@@ -1,0 +1,32 @@
+[Unit]
+Description=SMART Prometheus metrics (smartctl_exporter)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/smartctl_exporter
+Environment=SMARTCTL_EXPORTER_PORT=9902
+# Environment=SMARTCTL_STANDBY_SKIP=true
+# Environment=SMARTCTL_EXTENDED=true
+Restart=always
+RestartSec=5
+
+# Run unprivileged; smartctl inherits the ambient capabilities it needs
+# (ATA/SCSI passthrough, NVMe admin ioctls, opening /dev/* owned by root:disk).
+DynamicUser=yes
+SupplementaryGroups=disk
+AmbientCapabilities=CAP_SYS_RAWIO CAP_SYS_ADMIN CAP_DAC_OVERRIDE
+CapabilityBoundingSet=CAP_SYS_RAWIO CAP_SYS_ADMIN CAP_DAC_OVERRIDE
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=yes
+# If SMARTCTL_METRICS_FILE_ENABLE=true, allow writing the textfile directory:
+# ReadWritePaths=/var/lib/node_exporter/textfile_collector
+# Environment=SMARTCTL_METRICS_FILE_PATH=/var/lib/node_exporter/textfile_collector
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,96 @@
+name: release
+
+# Every push to master (direct or a merged PR) runs CI and, if the commits since
+# the last tag contain a releasable conventional commit (feat/fix/BREAKING
+# CHANGE), cuts a semver release: git tag, GitHub release with binaries, and a
+# multi-arch image on ghcr.io.
+on:
+  push:
+    branches: [master]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    needs: ci
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          fetch-depth: 0
+
+      - id: semrel
+        uses: go-semantic-release/action@2e9dc4247a6004f8377781bef4cb9dad273a741f # v1.24.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-initial-development-versions: true
+          dry: true
+
+      - name: No release needed
+        if: steps.semrel.outputs.version == ''
+        run: echo "No feat/fix commits since the last release; skipping."
+
+      - name: Tag (local)
+        if: steps.semrel.outputs.version != ''
+        env:
+          VERSION: ${{ steps.semrel.outputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Local tag only: GoReleaser creates the GitHub release, which creates
+          # the remote tag at release.target_commitish. If anything fails before
+          # that, no tag is left behind and the run can simply be retried.
+          git tag -a "v${VERSION}" -m "v${VERSION}"
+
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5.6.0
+        if: steps.semrel.outputs.version != ''
+        with:
+          go-version-file: go.mod
+
+      - uses: goreleaser/goreleaser-action@a4f02ab5355a589de60d917a659ce617ed19b3de # v7.3.0
+        if: steps.semrel.outputs.version != ''
+        with:
+          version: "~> v2"
+          args: release --clean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/setup-qemu-action@c7c53464625b32c7a7e944ae62b3e17d2b600130 # v3.7.0
+        if: steps.semrel.outputs.version != ''
+      - uses: docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f # v3.12.0
+        if: steps.semrel.outputs.version != ''
+      - uses: docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9 # v3.7.0
+        if: steps.semrel.outputs.version != ''
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - id: meta
+        if: steps.semrel.outputs.version != ''
+        uses: docker/metadata-action@c299e40c65443455700f0fdfc63efafe5b349051 # v5.10.0
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=semver,pattern={{version}},value=v${{ steps.semrel.outputs.version }}
+            type=semver,pattern={{major}}.{{minor}},value=v${{ steps.semrel.outputs.version }}
+            type=raw,value=latest
+      - uses: docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8 # v6.19.2
+        if: steps.semrel.outputs.version != ''
+        with:
+          context: .
+          platforms: linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x
+          build-args: VERSION=${{ steps.semrel.outputs.version }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

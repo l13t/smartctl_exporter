@@ -1,0 +1,12 @@
+# path	megaraid	fixture	exit_code	standby_fixture
+/dev/sda	-	sat-null-ST8000NM017B-2TJ103-sda.json	0	-
+/dev/sdb	-	WDC_WD20EFRX-68EUZN0_17.json	64	-
+/dev/sdc	-	sat-null-SAMSUNG_MZ7L3480HCHQ-00A07-sda.json	0	-
+/dev/sdd	-	SEAGATE_ST373453LC_26.json	0	-
+/dev/sde	-	WDC_WD20EFRX-68EUZN0_17.json	0	synthetic-standby.json
+/dev/sdf	-	synthetic-sat-edge.json	192	-
+/dev/sdg	-	synthetic-sat-no-attributes.json	4	-
+/dev/nvme0	-	nvme-null-Samsung_SSD_970_EVO_Plus_250GB-nvme0.json	0	-
+/dev/nvme1	-	nvme-null-Micron_7450_MTFDKCC3T2TFS-nvme1.json	0	-
+/dev/bus/0	megaraid,0	sat-null-ST8000NM017B-2TJ103-sda.json	0	-
+/dev/bus/0	megaraid,1	HITACHI_H109060SESUN600G_10.json	0	-

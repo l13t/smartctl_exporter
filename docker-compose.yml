@@ -1,0 +1,24 @@
+services:
+  smartctl-exporter:
+    image: smartctl_exporter:latest
+    build: .
+    container_name: smartctl-exporter
+    restart: unless-stopped
+    ports:
+      - "9902:9902"
+    # Least privilege: list every drive to monitor and grant only the
+    # capabilities smartctl needs. If this is too fiddly for your host,
+    # replace cap_add/devices with `privileged: true` (as the Python image did).
+    cap_add:
+      - SYS_RAWIO
+      - SYS_ADMIN
+    devices:
+      - /dev/sda
+      - /dev/nvme0
+    environment:
+      SMARTCTL_REFRESH_INTERVAL: "60"
+      # SMARTCTL_STANDBY_SKIP: "true"   # don't wake sleeping HDDs
+      # SMARTCTL_EXTENDED: "true"       # smartprom_ext_* from `smartctl -x`
+      # SMARTCTL_METRICS_FILE_ENABLE: "true"
+    # volumes:
+    #   - ./tmp/:/metrics/              # textfile for node_exporter

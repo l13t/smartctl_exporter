@@ -1,0 +1,509 @@
+# HELP smartprom_raw_read_error_rate (0x1) Raw Read Error Rate
+# TYPE smartprom_raw_read_error_rate gauge
+smartprom_raw_read_error_rate{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 71.0
+smartprom_raw_read_error_rate{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_raw_read_error_rate{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_raw_read_error_rate{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 71.0
+# HELP smartprom_raw_read_error_rate_raw (0x1) Raw Read Error Rate raw
+# TYPE smartprom_raw_read_error_rate_raw gauge
+smartprom_raw_read_error_rate_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 1.177268e+07
+smartprom_raw_read_error_rate_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 114.0
+smartprom_raw_read_error_rate_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 114.0
+smartprom_raw_read_error_rate_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 1.177268e+07
+# HELP smartprom_spin_up_time (0x3) Spin Up Time
+# TYPE smartprom_spin_up_time gauge
+smartprom_spin_up_time{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 94.0
+smartprom_spin_up_time{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_spin_up_time{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_spin_up_time{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 94.0
+# HELP smartprom_spin_up_time_raw (0x3) Spin Up Time raw
+# TYPE smartprom_spin_up_time_raw gauge
+smartprom_spin_up_time_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_spin_up_time_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_spin_up_time_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_spin_up_time_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_start_stop_count (0x4) Start Stop Count
+# TYPE smartprom_start_stop_count gauge
+smartprom_start_stop_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_start_stop_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_start_stop_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_start_stop_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_start_stop_count_raw (0x4) Start Stop Count raw
+# TYPE smartprom_start_stop_count_raw gauge
+smartprom_start_stop_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 17.0
+smartprom_start_stop_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 3.0
+smartprom_start_stop_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 3.0
+smartprom_start_stop_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 17.0
+# HELP smartprom_reallocated_sector_ct (0x5) Reallocated Sector Ct
+# TYPE smartprom_reallocated_sector_ct gauge
+smartprom_reallocated_sector_ct{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_reallocated_sector_ct{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_reallocated_sector_ct{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+smartprom_reallocated_sector_ct{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_reallocated_sector_ct{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 90.0
+smartprom_reallocated_sector_ct{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_reallocated_sector_ct_raw (0x5) Reallocated Sector Ct raw
+# TYPE smartprom_reallocated_sector_ct_raw gauge
+smartprom_reallocated_sector_ct_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_reallocated_sector_ct_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_reallocated_sector_ct_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+smartprom_reallocated_sector_ct_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_reallocated_sector_ct_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 1234.0
+smartprom_reallocated_sector_ct_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_seek_error_rate (0x7) Seek Error Rate
+# TYPE smartprom_seek_error_rate gauge
+smartprom_seek_error_rate{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 89.0
+smartprom_seek_error_rate{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_seek_error_rate{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_seek_error_rate{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 89.0
+# HELP smartprom_seek_error_rate_raw (0x7) Seek Error Rate raw
+# TYPE smartprom_seek_error_rate_raw gauge
+smartprom_seek_error_rate_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 7.90616774e+08
+smartprom_seek_error_rate_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_seek_error_rate_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_seek_error_rate_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 7.90616774e+08
+# HELP smartprom_power_on_hours (0x9) Power On Hours
+# TYPE smartprom_power_on_hours gauge
+smartprom_power_on_hours{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 88.0
+smartprom_power_on_hours{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 35.0
+smartprom_power_on_hours{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 97.0
+smartprom_power_on_hours{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 35.0
+smartprom_power_on_hours{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 77.0
+smartprom_power_on_hours{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 3149.0
+smartprom_power_on_hours{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 2884.0
+smartprom_power_on_hours{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 88.0
+# HELP smartprom_power_on_hours_raw (0x9) Power On Hours raw
+# TYPE smartprom_power_on_hours_raw gauge
+smartprom_power_on_hours_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 10645.0
+smartprom_power_on_hours_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 47657.0
+smartprom_power_on_hours_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 10786.0
+smartprom_power_on_hours_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 47657.0
+smartprom_power_on_hours_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 20071.0
+smartprom_power_on_hours_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 10645.0
+# HELP smartprom_spin_retry_count (0xa) Spin Retry Count
+# TYPE smartprom_spin_retry_count gauge
+smartprom_spin_retry_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_spin_retry_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_spin_retry_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_spin_retry_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_spin_retry_count_raw (0xa) Spin Retry Count raw
+# TYPE smartprom_spin_retry_count_raw gauge
+smartprom_spin_retry_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_spin_retry_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_spin_retry_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_spin_retry_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_power_cycle_count (0xc) Power Cycle Count
+# TYPE smartprom_power_cycle_count gauge
+smartprom_power_cycle_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_power_cycle_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_power_cycle_count{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 99.0
+smartprom_power_cycle_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_power_cycle_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_power_cycle_count_raw (0xc) Power Cycle Count raw
+# TYPE smartprom_power_cycle_count_raw gauge
+smartprom_power_cycle_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 18.0
+smartprom_power_cycle_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 3.0
+smartprom_power_cycle_count_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 10.0
+smartprom_power_cycle_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 3.0
+smartprom_power_cycle_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 18.0
+# HELP smartprom_unknown_attribute (0x12) Unknown Attribute
+# TYPE smartprom_unknown_attribute gauge
+smartprom_unknown_attribute{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_unknown_attribute{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+smartprom_unknown_attribute{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 99.0
+smartprom_unknown_attribute{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_unknown_attribute_raw (0x12) Unknown Attribute raw
+# TYPE smartprom_unknown_attribute_raw gauge
+smartprom_unknown_attribute_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_unknown_attribute_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 1.79241216e+09
+smartprom_unknown_attribute_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 2.0
+smartprom_unknown_attribute_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_reported_uncorrect (0xbb) Reported Uncorrect
+# TYPE smartprom_reported_uncorrect gauge
+smartprom_reported_uncorrect{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_reported_uncorrect{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+smartprom_reported_uncorrect{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_reported_uncorrect_raw (0xbb) Reported Uncorrect raw
+# TYPE smartprom_reported_uncorrect_raw gauge
+smartprom_reported_uncorrect_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_reported_uncorrect_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+smartprom_reported_uncorrect_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_command_timeout (0xbc) Command Timeout
+# TYPE smartprom_command_timeout gauge
+smartprom_command_timeout{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_command_timeout{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_command_timeout_raw (0xbc) Command Timeout raw
+# TYPE smartprom_command_timeout_raw gauge
+smartprom_command_timeout_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_command_timeout_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_airflow_temperature_cel (0xbe) Airflow Temperature Cel
+# TYPE smartprom_airflow_temperature_cel gauge
+smartprom_airflow_temperature_cel{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 73.0
+smartprom_airflow_temperature_cel{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 71.0
+smartprom_airflow_temperature_cel{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 57.0
+smartprom_airflow_temperature_cel{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 73.0
+# HELP smartprom_airflow_temperature_cel_raw (0xbe) Airflow Temperature Cel raw
+# TYPE smartprom_airflow_temperature_cel_raw gauge
+smartprom_airflow_temperature_cel_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+smartprom_airflow_temperature_cel_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 29.0
+smartprom_airflow_temperature_cel_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 43.0
+smartprom_airflow_temperature_cel_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+# HELP smartprom_power_off_retract_count (0xc0) Power-Off Retract Count
+# TYPE smartprom_power_off_retract_count gauge
+smartprom_power_off_retract_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_power_off_retract_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_power_off_retract_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_power_off_retract_count{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 100.0
+smartprom_power_off_retract_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_power_off_retract_count_raw (0xc0) Power-Off Retract Count raw
+# TYPE smartprom_power_off_retract_count_raw gauge
+smartprom_power_off_retract_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 11.0
+smartprom_power_off_retract_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 1.0
+smartprom_power_off_retract_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 1.0
+smartprom_power_off_retract_count_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 7.0
+smartprom_power_off_retract_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 11.0
+# HELP smartprom_load_cycle_count (0xc1) Load Cycle Count
+# TYPE smartprom_load_cycle_count gauge
+smartprom_load_cycle_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_load_cycle_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_load_cycle_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_load_cycle_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_load_cycle_count_raw (0xc1) Load Cycle Count raw
+# TYPE smartprom_load_cycle_count_raw gauge
+smartprom_load_cycle_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 651.0
+smartprom_load_cycle_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 882.0
+smartprom_load_cycle_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 882.0
+smartprom_load_cycle_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 651.0
+# HELP smartprom_temperature_celsius (0xc2) Temperature Celsius
+# TYPE smartprom_temperature_celsius gauge
+smartprom_temperature_celsius{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+smartprom_temperature_celsius{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 113.0
+smartprom_temperature_celsius{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 71.0
+smartprom_temperature_celsius{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 113.0
+smartprom_temperature_celsius{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+# HELP smartprom_temperature_celsius_raw (0xc2) Temperature Celsius raw
+# TYPE smartprom_temperature_celsius_raw gauge
+smartprom_temperature_celsius_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+smartprom_temperature_celsius_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 34.0
+smartprom_temperature_celsius_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 29.0
+smartprom_temperature_celsius_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 34.0
+smartprom_temperature_celsius_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 27.0
+# HELP smartprom_current_pending_sector (0xc5) Current Pending Sector
+# TYPE smartprom_current_pending_sector gauge
+smartprom_current_pending_sector{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_current_pending_sector{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_current_pending_sector{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+smartprom_current_pending_sector{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_current_pending_sector{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_current_pending_sector_raw (0xc5) Current Pending Sector raw
+# TYPE smartprom_current_pending_sector_raw gauge
+smartprom_current_pending_sector_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_current_pending_sector_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_current_pending_sector_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+smartprom_current_pending_sector_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_current_pending_sector_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_offline_uncorrectable (0xc6) Offline Uncorrectable
+# TYPE smartprom_offline_uncorrectable gauge
+smartprom_offline_uncorrectable{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_offline_uncorrectable{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_offline_uncorrectable{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_offline_uncorrectable{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_offline_uncorrectable_raw (0xc6) Offline Uncorrectable raw
+# TYPE smartprom_offline_uncorrectable_raw gauge
+smartprom_offline_uncorrectable_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_offline_uncorrectable_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_offline_uncorrectable_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_offline_uncorrectable_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_udma_crc_error_count (0xc7) UDMA CRC Error Count
+# TYPE smartprom_udma_crc_error_count gauge
+smartprom_udma_crc_error_count{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 200.0
+smartprom_udma_crc_error_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_udma_crc_error_count{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+smartprom_udma_crc_error_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_udma_crc_error_count{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 200.0
+smartprom_udma_crc_error_count{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 200.0
+# HELP smartprom_udma_crc_error_count_raw (0xc7) UDMA CRC Error Count raw
+# TYPE smartprom_udma_crc_error_count_raw gauge
+smartprom_udma_crc_error_count_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_udma_crc_error_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_udma_crc_error_count_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+smartprom_udma_crc_error_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_udma_crc_error_count_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+# HELP smartprom_head_flying_hours (0xf0) Head Flying Hours
+# TYPE smartprom_head_flying_hours gauge
+smartprom_head_flying_hours{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_head_flying_hours{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_head_flying_hours_raw (0xf0) Head Flying Hours raw
+# TYPE smartprom_head_flying_hours_raw gauge
+smartprom_head_flying_hours_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 10091.0
+smartprom_head_flying_hours_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 10091.0
+# HELP smartprom_total_lbas_written (0xf1) Total LBAs Written
+# TYPE smartprom_total_lbas_written gauge
+smartprom_total_lbas_written{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_total_lbas_written{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 99.0
+smartprom_total_lbas_written{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 100.0
+smartprom_total_lbas_written{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_total_lbas_written_raw (0xf1) Total LBAs Written raw
+# TYPE smartprom_total_lbas_written_raw gauge
+smartprom_total_lbas_written_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 4.01457943888e+011
+smartprom_total_lbas_written_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 1.304884573e+09
+smartprom_total_lbas_written_raw{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 9.8765432109e+010
+smartprom_total_lbas_written_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 4.01457943888e+011
+# HELP smartprom_total_lbas_read (0xf2) Total LBAs Read
+# TYPE smartprom_total_lbas_read gauge
+smartprom_total_lbas_read{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+smartprom_total_lbas_read{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 99.0
+smartprom_total_lbas_read{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 100.0
+# HELP smartprom_total_lbas_read_raw (0xf2) Total LBAs Read raw
+# TYPE smartprom_total_lbas_read_raw gauge
+smartprom_total_lbas_read_raw{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 6.0841830299295e+013
+smartprom_total_lbas_read_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 5.091375e+07
+smartprom_total_lbas_read_raw{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 6.0841830299295e+013
+# HELP smartprom_smart_passed (0x0) smart passed
+# TYPE smartprom_smart_passed gauge
+smartprom_smart_passed{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 1.0
+smartprom_smart_passed{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 1.0
+smartprom_smart_passed{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 1.0
+smartprom_smart_passed{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 1.0
+smartprom_smart_passed{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 1.0
+smartprom_smart_passed{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 0.0
+smartprom_smart_passed{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 1.0
+smartprom_smart_passed{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 1.0
+smartprom_smart_passed{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 1.0
+smartprom_smart_passed{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 1.0
+# HELP smartprom_exit_code (0x0) exit code
+# TYPE smartprom_exit_code gauge
+smartprom_exit_code{drive="/dev/sda",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_exit_code{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 64.0
+smartprom_exit_code{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+smartprom_exit_code{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 0.0
+smartprom_exit_code{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_exit_code{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 192.0
+smartprom_exit_code{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_exit_code{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+smartprom_exit_code{drive="megaraid,0",model_family="Unknown",model_name="ST8000NM017B-2TJ103",serial_number="REDACTED",type="sat",user_capacity="8001563222016"} 0.0
+smartprom_exit_code{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 0.0
+# HELP smartprom_calibration_retry_count (0xb) Calibration Retry Count
+# TYPE smartprom_calibration_retry_count gauge
+smartprom_calibration_retry_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+smartprom_calibration_retry_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 100.0
+# HELP smartprom_calibration_retry_count_raw (0xb) Calibration Retry Count raw
+# TYPE smartprom_calibration_retry_count_raw gauge
+smartprom_calibration_retry_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_calibration_retry_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+# HELP smartprom_reallocated_event_count (0xc4) Reallocated Event Count
+# TYPE smartprom_reallocated_event_count gauge
+smartprom_reallocated_event_count{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_reallocated_event_count{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+# HELP smartprom_reallocated_event_count_raw (0xc4) Reallocated Event Count raw
+# TYPE smartprom_reallocated_event_count_raw gauge
+smartprom_reallocated_event_count_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_reallocated_event_count_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+# HELP smartprom_multi_zone_error_rate (0xc8) Multi Zone Error Rate
+# TYPE smartprom_multi_zone_error_rate gauge
+smartprom_multi_zone_error_rate{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+smartprom_multi_zone_error_rate{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 200.0
+# HELP smartprom_multi_zone_error_rate_raw (0xc8) Multi Zone Error Rate raw
+# TYPE smartprom_multi_zone_error_rate_raw gauge
+smartprom_multi_zone_error_rate_raw{drive="/dev/sdb",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+smartprom_multi_zone_error_rate_raw{drive="/dev/sde",model_family="Western Digital Red",model_name="WDC WD20EFRX-68EUZN0",serial_number="REDACTED",type="sat",user_capacity="2000398934016"} 0.0
+# HELP smartprom_wear_leveling_count (0xb1) Wear Leveling Count
+# TYPE smartprom_wear_leveling_count gauge
+smartprom_wear_leveling_count{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 98.0
+# HELP smartprom_wear_leveling_count_raw (0xb1) Wear Leveling Count raw
+# TYPE smartprom_wear_leveling_count_raw gauge
+smartprom_wear_leveling_count_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 129.0
+# HELP smartprom_used_rsvd_blk_cnt_tot (0xb3) Used Rsvd Blk Cnt Tot
+# TYPE smartprom_used_rsvd_blk_cnt_tot gauge
+smartprom_used_rsvd_blk_cnt_tot{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_used_rsvd_blk_cnt_tot_raw (0xb3) Used Rsvd Blk Cnt Tot raw
+# TYPE smartprom_used_rsvd_blk_cnt_tot_raw gauge
+smartprom_used_rsvd_blk_cnt_tot_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_unused_rsvd_blk_cnt_tot (0xb4) Unused Rsvd Blk Cnt Tot
+# TYPE smartprom_unused_rsvd_blk_cnt_tot gauge
+smartprom_unused_rsvd_blk_cnt_tot{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_unused_rsvd_blk_cnt_tot_raw (0xb4) Unused Rsvd Blk Cnt Tot raw
+# TYPE smartprom_unused_rsvd_blk_cnt_tot_raw gauge
+smartprom_unused_rsvd_blk_cnt_tot_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 435.0
+# HELP smartprom_program_fail_cnt_total (0xb5) Program Fail Cnt Total
+# TYPE smartprom_program_fail_cnt_total gauge
+smartprom_program_fail_cnt_total{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_program_fail_cnt_total_raw (0xb5) Program Fail Cnt Total raw
+# TYPE smartprom_program_fail_cnt_total_raw gauge
+smartprom_program_fail_cnt_total_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_erase_fail_count_total (0xb6) Erase Fail Count Total
+# TYPE smartprom_erase_fail_count_total gauge
+smartprom_erase_fail_count_total{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_erase_fail_count_total_raw (0xb6) Erase Fail Count Total raw
+# TYPE smartprom_erase_fail_count_total_raw gauge
+smartprom_erase_fail_count_total_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_runtime_bad_block (0xb7) Runtime Bad Block
+# TYPE smartprom_runtime_bad_block gauge
+smartprom_runtime_bad_block{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_runtime_bad_block_raw (0xb7) Runtime Bad Block raw
+# TYPE smartprom_runtime_bad_block_raw gauge
+smartprom_runtime_bad_block_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_end_to_end_error (0xb8) End-to-End Error
+# TYPE smartprom_end_to_end_error gauge
+smartprom_end_to_end_error{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_end_to_end_error_raw (0xb8) End-to-End Error raw
+# TYPE smartprom_end_to_end_error_raw gauge
+smartprom_end_to_end_error_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_hardware_ecc_recovered (0xc3) Hardware ECC Recovered
+# TYPE smartprom_hardware_ecc_recovered gauge
+smartprom_hardware_ecc_recovered{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 200.0
+smartprom_hardware_ecc_recovered{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 100.0
+# HELP smartprom_hardware_ecc_recovered_raw (0xc3) Hardware ECC Recovered raw
+# TYPE smartprom_hardware_ecc_recovered_raw gauge
+smartprom_hardware_ecc_recovered_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_unknown_ssd_attribute (0xca) Unknown SSD Attribute
+# TYPE smartprom_unknown_ssd_attribute gauge
+smartprom_unknown_ssd_attribute{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 100.0
+# HELP smartprom_unknown_ssd_attribute_raw (0xca) Unknown SSD Attribute raw
+# TYPE smartprom_unknown_ssd_attribute_raw gauge
+smartprom_unknown_ssd_attribute_raw{drive="/dev/sdc",model_family="Unknown",model_name="SAMSUNG MZ7L3480HCHQ-00A07",serial_number="REDACTED",type="usbjmicron",user_capacity="480103981056"} 0.0
+# HELP smartprom_device_type_scsi_value (0x0) device type scsi value
+# TYPE smartprom_device_type_scsi_value gauge
+smartprom_device_type_scsi_value{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 0.0
+smartprom_device_type_scsi_value{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 0.0
+# HELP smartprom_local_time_time_t (0x499602d2) local time time t
+# TYPE smartprom_local_time_time_t gauge
+smartprom_local_time_time_t{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 1.23456789e+09
+smartprom_local_time_time_t{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 1.23456789e+09
+# HELP smartprom_logical_block_size (0x200) logical block size
+# TYPE smartprom_logical_block_size gauge
+smartprom_logical_block_size{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 512.0
+smartprom_logical_block_size{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 512.0
+# HELP smartprom_power_on_time_hours (0x191e0) power on time hours
+# TYPE smartprom_power_on_time_hours gauge
+smartprom_power_on_time_hours{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 102880.0
+smartprom_power_on_time_hours{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 22364.0
+# HELP smartprom_power_on_time_minutes (0x3b) power on time minutes
+# TYPE smartprom_power_on_time_minutes gauge
+smartprom_power_on_time_minutes{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 59.0
+smartprom_power_on_time_minutes{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 52.0
+# HELP smartprom_rotation_rate (0x3aa7) rotation rate
+# TYPE smartprom_rotation_rate gauge
+smartprom_rotation_rate{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 15015.0
+smartprom_rotation_rate{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 10020.0
+# HELP smartprom_scsi_grown_defect_list (0x104) scsi grown defect list
+# TYPE smartprom_scsi_grown_defect_list gauge
+smartprom_scsi_grown_defect_list{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 260.0
+smartprom_scsi_grown_defect_list{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 0.0
+# HELP smartprom_scsi_transport_protocol_value (0x1) scsi transport protocol value
+# TYPE smartprom_scsi_transport_protocol_value gauge
+smartprom_scsi_transport_protocol_value{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 1.0
+smartprom_scsi_transport_protocol_value{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 6.0
+# HELP smartprom_smartctl_exit_status (0x0) smartctl exit status
+# TYPE smartprom_smartctl_exit_status gauge
+smartprom_smartctl_exit_status{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 0.0
+smartprom_smartctl_exit_status{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 0.0
+# HELP smartprom_temperature_current (0x21) temperature current
+# TYPE smartprom_temperature_current gauge
+smartprom_temperature_current{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 33.0
+smartprom_temperature_current{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 26.0
+# HELP smartprom_temperature_drive_trip (0x44) temperature drive trip
+# TYPE smartprom_temperature_drive_trip gauge
+smartprom_temperature_drive_trip{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 68.0
+smartprom_temperature_drive_trip{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 85.0
+# HELP smartprom_user_capacity_blocks (0x88bb93a) user capacity blocks
+# TYPE smartprom_user_capacity_blocks gauge
+smartprom_user_capacity_blocks{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 1.4337465e+08
+smartprom_user_capacity_blocks{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 1.172123568e+09
+# HELP smartprom_user_capacity_bytes (0x1117727400) user capacity bytes
+# TYPE smartprom_user_capacity_bytes gauge
+smartprom_user_capacity_bytes{drive="/dev/sdd",model_family="Unknown",model_name="Unknown",serial_number="REDACTED",type="scsi",user_capacity="73407820800"} 7.34078208e+010
+smartprom_user_capacity_bytes{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 6.00127266816e+011
+# HELP smartprom_read_error_retry_rate (0xfa) Read Error Retry Rate
+# TYPE smartprom_read_error_retry_rate gauge
+smartprom_read_error_retry_rate{drive="/dev/sdf",model_family="Synthetic Edge Cases",model_name="EDGE-HDD-1",serial_number="EDGE0001",type="sat",user_capacity="1000204886016"} 100.0
+# HELP smartprom_available_spare (0x64) available spare
+# TYPE smartprom_available_spare gauge
+smartprom_available_spare{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 100.0
+smartprom_available_spare{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 100.0
+# HELP smartprom_available_spare_threshold (0xa) available spare threshold
+# TYPE smartprom_available_spare_threshold gauge
+smartprom_available_spare_threshold{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 10.0
+smartprom_available_spare_threshold{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 10.0
+# HELP smartprom_controller_busy_time (0x37c) controller busy time
+# TYPE smartprom_controller_busy_time gauge
+smartprom_controller_busy_time{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 892.0
+smartprom_controller_busy_time{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 10.0
+# HELP smartprom_critical_comp_time (0x0) critical comp time
+# TYPE smartprom_critical_comp_time gauge
+smartprom_critical_comp_time{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_critical_comp_time{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_critical_warning (0x0) critical warning
+# TYPE smartprom_critical_warning gauge
+smartprom_critical_warning{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_critical_warning{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_data_units_read (0x1ee64a) data units read
+# TYPE smartprom_data_units_read gauge
+smartprom_data_units_read{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 2.025034e+06
+smartprom_data_units_read{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 170056.0
+# HELP smartprom_data_units_written (0x1e0d33) data units written
+# TYPE smartprom_data_units_written gauge
+smartprom_data_units_written{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 1.969459e+06
+smartprom_data_units_written{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 1.248078e+06
+# HELP smartprom_host_reads (0xd48348) host reads
+# TYPE smartprom_host_reads gauge
+smartprom_host_reads{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 1.392724e+07
+smartprom_host_reads{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 412435.0
+# HELP smartprom_host_writes (0x5449ba1) host writes
+# TYPE smartprom_host_writes gauge
+smartprom_host_writes{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 8.8382369e+07
+smartprom_host_writes{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 9.2595817e+07
+# HELP smartprom_media_errors (0x0) media errors
+# TYPE smartprom_media_errors gauge
+smartprom_media_errors{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_media_errors{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_num_err_log_entries (0x16) num err log entries
+# TYPE smartprom_num_err_log_entries gauge
+smartprom_num_err_log_entries{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 22.0
+smartprom_num_err_log_entries{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_percentage_used (0x0) percentage used
+# TYPE smartprom_percentage_used gauge
+smartprom_percentage_used{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_percentage_used{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_power_cycles (0x10) power cycles
+# TYPE smartprom_power_cycles gauge
+smartprom_power_cycles{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 16.0
+smartprom_power_cycles{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 32.0
+# HELP smartprom_temperature (0x23) temperature
+# TYPE smartprom_temperature gauge
+smartprom_temperature{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 35.0
+smartprom_temperature{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 33.0
+# HELP smartprom_temperature_sensor1 (0x23) temperature sensor1
+# TYPE smartprom_temperature_sensor1 gauge
+smartprom_temperature_sensor1{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 35.0
+smartprom_temperature_sensor1{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 38.0
+# HELP smartprom_temperature_sensor2 (0x27) temperature sensor2
+# TYPE smartprom_temperature_sensor2 gauge
+smartprom_temperature_sensor2{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 39.0
+smartprom_temperature_sensor2{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 35.0
+# HELP smartprom_unsafe_shutdowns (0xc) unsafe shutdowns
+# TYPE smartprom_unsafe_shutdowns gauge
+smartprom_unsafe_shutdowns{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 12.0
+smartprom_unsafe_shutdowns{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 30.0
+# HELP smartprom_warning_temp_time (0x0) warning temp time
+# TYPE smartprom_warning_temp_time gauge
+smartprom_warning_temp_time{drive="/dev/nvme0",model_family="Unknown",model_name="Samsung SSD 970 EVO Plus 250GB",serial_number="REDACTED",type="nvme",user_capacity="250059350016"} 0.0
+smartprom_warning_temp_time{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 0.0
+# HELP smartprom_temperature_sensor3 (0x21) temperature sensor3
+# TYPE smartprom_temperature_sensor3 gauge
+smartprom_temperature_sensor3{drive="/dev/nvme1",model_family="Unknown",model_name="Micron_7450_MTFDKCC3T2TFS",serial_number="REDACTED",type="nvme",user_capacity="Unknown"} 33.0
+# HELP smartprom_form_factor_scsi_value (0x3) form factor scsi value
+# TYPE smartprom_form_factor_scsi_value gauge
+smartprom_form_factor_scsi_value{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 3.0
+# HELP smartprom_scsi_start_stop_cycle_counter_accumulated_load_unload_cycles (0xd90) scsi start stop cycle counter accumulated load unload cycles
+# TYPE smartprom_scsi_start_stop_cycle_counter_accumulated_load_unload_cycles gauge
+smartprom_scsi_start_stop_cycle_counter_accumulated_load_unload_cycles{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 3472.0
+# HELP smartprom_scsi_start_stop_cycle_counter_accumulated_start_stop_cycles (0x46) scsi start stop cycle counter accumulated start stop cycles
+# TYPE smartprom_scsi_start_stop_cycle_counter_accumulated_start_stop_cycles gauge
+smartprom_scsi_start_stop_cycle_counter_accumulated_start_stop_cycles{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 70.0
+# HELP smartprom_scsi_start_stop_cycle_counter_specified_cycle_count_over_device_lifetime (0xc350) scsi start stop cycle counter specified cycle count over device lifetime
+# TYPE smartprom_scsi_start_stop_cycle_counter_specified_cycle_count_over_device_lifetime gauge
+smartprom_scsi_start_stop_cycle_counter_specified_cycle_count_over_device_lifetime{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 50000.0
+# HELP smartprom_scsi_start_stop_cycle_counter_specified_load_unload_count_over_device_lifetime (0x927c0) scsi start stop cycle counter specified load unload count over device lifetime
+# TYPE smartprom_scsi_start_stop_cycle_counter_specified_load_unload_count_over_device_lifetime gauge
+smartprom_scsi_start_stop_cycle_counter_specified_load_unload_count_over_device_lifetime{drive="megaraid,1",model_family="Unknown",model_name="HITACHI H109060SESUN600G",serial_number="REDACTED",type="scsi",user_capacity="600127266816"} 600000.0

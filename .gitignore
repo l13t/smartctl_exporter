@@ -1,0 +1,6 @@
+/smartctl_exporter
+/dist/
+*.prom.tmp
+# go-semantic-release working files (release workflow)
+/.semrel/
+/.generated-go-semantic-release-changelog.md
