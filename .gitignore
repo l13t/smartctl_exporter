@@ -1,0 +1,3 @@
+/smartctl_exporter
+/dist/
+*.prom.tmp

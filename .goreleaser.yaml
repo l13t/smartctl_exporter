@@ -1,0 +1,73 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+version: 2
+
+project_name: smartctl_exporter
+
+before:
+  hooks:
+    - go mod tidy -diff
+
+builds:
+  - id: smartctl_exporter
+    main: ./cmd/smartctl_exporter
+    binary: smartctl_exporter
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X main.version={{ .Version }}
+    goos: [linux, freebsd, darwin]
+    goarch: ["386", amd64, arm, arm64, ppc64le, s390x]
+    goarm: ["6", "7"]
+    ignore:
+      - goos: darwin
+        goarch: "386"
+      - goos: darwin
+        goarch: arm
+      - goos: darwin
+        goarch: ppc64le
+      - goos: darwin
+        goarch: s390x
+      - goos: freebsd
+        goarch: ppc64le
+      - goos: freebsd
+        goarch: s390x
+
+archives:
+  - formats: [tar.gz]
+    name_template: >-
+      {{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ with .Arm }}v{{ . }}{{ end }}
+    files:
+      - README.md
+      - smartctl_exporter.service
+      - docker-compose.yml
+      - grafana/grafana_dashboard.json
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  use: github
+  sort: asc
+  groups:
+    - title: Features
+      regexp: '^.*?feat(\(.+\))??!?:.+$'
+      order: 0
+    - title: Bug fixes
+      regexp: '^.*?fix(\(.+\))??!?:.+$'
+      order: 1
+    - title: Other
+      order: 999
+  filters:
+    exclude:
+      - '^docs?:'
+      - '^test:'
+      - '^chore\(deps\):'
+
+release:
+  github:
+    owner: l13t
+    name: smartctl_exporter
+  footer: |
+    **Docker:** `ghcr.io/l13t/smartctl_exporter:{{ .Version }}`

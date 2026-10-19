@@ -1,0 +1,9 @@
+{
+  "json_format_version": [1, 0],
+  "smartctl": {"version": [7, 4], "exit_status": 4, "messages": [{"string": "Read SMART Data failed: scsi error badly formed scsi parameters", "severity": "error"}]},
+  "device": {"name": "/dev/sdg", "info_name": "/dev/sdg [SAT]", "type": "sat", "protocol": "ATA"},
+  "model_name": "NOATTR-SSD",
+  "serial_number": "NOATTR01",
+  "user_capacity": {"blocks": 500118192, "bytes": 256060514304},
+  "smart_status": {"passed": true}
+}

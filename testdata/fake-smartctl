@@ -1,0 +1,33 @@
+#!/bin/sh
+# Fake smartctl for tests. Serves JSON fixtures from $FAKE_SMARTCTL_DIR
+# (default: ./scenario next to this script) according to devices.tsv.
+# Understands the argument shapes used by both the Python and Go exporters.
+set -eu
+dir=${FAKE_SMARTCTL_DIR:-$(cd "$(dirname "$0")" && pwd)/scenario}
+dev="" typ="" nocheck=0
+while [ $# -gt 0 ]; do
+	case $1 in
+	--scan-open) cat "$dir/scan.json"; exit 0 ;;
+	-d) typ=$2; shift ;;
+	-n) nocheck=1; shift ;;
+	-*) ;;
+	*) dev=$1 ;;
+	esac
+	shift
+done
+mr=$(printf '%s' "$typ" | sed -n 's/.*\(megaraid,[0-9][0-9]*\).*/\1/p')
+[ -n "$mr" ] || mr=-
+line=$(awk -F'\t' -v d="$dev" -v m="$mr" '$1 == d && $2 == m { print; exit }' "$dir/devices.tsv")
+if [ -z "$line" ]; then
+	echo "{\"smartctl\":{\"exit_status\":2,\"messages\":[{\"string\":\"$dev: No such device\",\"severity\":\"error\"}]}}"
+	exit 2
+fi
+fixture=$(printf '%s' "$line" | cut -f3)
+code=$(printf '%s' "$line" | cut -f4)
+standby=$(printf '%s' "$line" | cut -f5)
+if [ "$nocheck" = 1 ] && [ "$standby" != "-" ]; then
+	cat "$dir/$standby"
+	exit 2
+fi
+cat "$dir/$fixture"
+exit "$code"
