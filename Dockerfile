@@ -12,7 +12,7 @@ RUN case "$TARGETVARIANT" in v6) export GOARM=6 ;; v7) export GOARM=7 ;; esac; \
     CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
     go build -trimpath -ldflags "-s -w -X main.version=$VERSION" -o /out/smartctl_exporter ./cmd/smartctl_exporter
 
-FROM alpine:3.22
+FROM alpine:3.24
 # smartctl gets the capabilities it needs as file capabilities, so the
 # exporter itself runs unprivileged. The container must still be granted
 # SYS_RAWIO (ATA/SCSI passthrough) and SYS_ADMIN (NVMe ioctls) via cap_add,
